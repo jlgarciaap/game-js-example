@@ -1,0 +1,42 @@
+.game {
+    max-width: 800px; /*Tamaño maximo que se ve*/
+    max-height: 650px; /*Alto maximo que se ve*/
+    position: relative;
+    overflow: hidden; /*Lo que sobre se esconde con esto damos sensacion de movimiento de pantalla*/
+}
+.background{
+    background: rgb(52, 166, 240);
+     border-spacing: 0;
+}   
+
+.background tr {
+   border-spacing: 0;
+}
+
+.lava {
+    background: rgb(255, 100, 100);
+}
+
+.wall {
+    background: white
+}
+.actor{
+    position: absolute;/*Permite posicionar con el top y el left*/
+}
+
+.coin{
+    background: rgb(240, 230, 90)
+
+}
+.player {
+    /*background-image: url("https://s-media-cache-ak0.pinimg.com/originals/be/56/eb/be56eb7b49c646b73a69b2d50fe66c86.png");*/
+    content: url("./player.png")
+}
+
+.lost .player {
+    background: rgb(160, 65, 65)
+}
+
+.won .player{
+    box-shadow: -5px -7px 8px white
+}
